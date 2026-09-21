@@ -1,0 +1,29 @@
+# ============================================================
+#  Kemer Yat Turu - Git tarafindan yok sayilacak dosyalar
+#  Amac: repoyu kucuk tutmak. Site icin GEREKLI olanlar burada YOK.
+# ============================================================
+
+# Ham / kaynak JPG arsivi: hepsi WebP'ye cevrildi, sayfada kullanilmiyor.
+# ONEMLI ISTISNA: hero-yacht.jpg haric tutuluyor; o dosya og:image,
+# twitter:image ve CSS yedegi (image-set) icin canlida ZORUNLU.
+images/*.jpg
+!images/hero-yacht.jpg
+
+# Paket / arsiv dosyalari (Netlify'a elle yukleniyor, depoda gereksiz)
+*.zip
+*.7z
+*.rar
+
+# Gecici test ve ekran goruntusu dosyalari
+_*.html
+shot-*.png
+screenshot-*.png
+
+# Isletim sistemi ve editor dosyalari
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.log
+~$*
